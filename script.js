@@ -218,12 +218,12 @@ $(document).ready(function() {
             let call_to_action_text2 = '<p>Have fun watching your favourite movies!</p>';
             let button = "<a href='' class='url_movie_suggested'>WATCH HERE!</a>"
             let call_to_action = call_to_action_intro + call_to_action_text1 + call_to_action_text2
-            $('#question-animation').after('<div class="call_to_action">' + call_to_action + button + "</div>");
             //Animation fade
             $('#container-question').fadeOut(300);
             $('#question-animation').fadeOut(300);
             $('#movie-answer').fadeOut(300);
             setTimeout(function() {
+                $('#question-animation').after('<div class="call_to_action">' + call_to_action + button + "</div>");
                 $('.call_to_action').addClass('fade-in')
             }, 500);
             //ID movie suggested
